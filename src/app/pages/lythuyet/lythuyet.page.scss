@@ -1,3 +1,9 @@
+ion-header {
+    background: #f4f5f8;
+    ion-title{
+ text-align: center;
+    }
+}
 ion-content {
     --background: #eee;
 
@@ -6,5 +12,8 @@ ion-content {
         margin: 10px;
         border-radius: 6px;
         border: #3880ff solid 2px;
+        ion-col {
+            background: #27a21c;
+        }
     }
 }

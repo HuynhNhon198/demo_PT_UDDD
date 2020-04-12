@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { LythuyetPageRoutingModule } from './lythuyet-routing.module';
 
 import { LythuyetPage } from './lythuyet.page';
-import { LythuyetDetailComponent } from 'src/app/component/lythuyet-detail/lythuyet-detail.component';
+import { LythuyetDetailComponent } from 'src/app/components/lythuyet-detail/lythuyet-detail.component';
 
 @NgModule({
   imports: [

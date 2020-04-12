@@ -1,5 +1,3 @@
-import { url } from 'inspector';
-
 const getLyThuyet = () => {
     return [
         {

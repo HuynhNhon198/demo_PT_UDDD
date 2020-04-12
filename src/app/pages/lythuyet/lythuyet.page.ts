@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import getLyThuyet from 'src/app/data/lythuyet';
 import { ModalController } from '@ionic/angular';
-import { LythuyetDetailComponent } from 'src/app/component/lythuyet-detail/lythuyet-detail.component';
+import { LythuyetDetailComponent } from 'src/app/components/lythuyet-detail/lythuyet-detail.component';
 
 @Component({
   selector: 'app-lythuyet',

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { BaitapPageRoutingModule } from './baitap-routing.module';
 
 import { BaitapPage } from './baitap.page';
+import { BaitapDetailComponent } from 'src/app/components/baitap-detail/baitap-detail.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { BaitapPage } from './baitap.page';
     IonicModule,
     BaitapPageRoutingModule
   ],
-  declarations: [BaitapPage]
+  entryComponents: [BaitapDetailComponent],
+  declarations: [BaitapPage, BaitapDetailComponent]
 })
 export class BaitapPageModule {}

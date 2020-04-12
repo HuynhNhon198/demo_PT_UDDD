@@ -8,5 +8,11 @@
 </ion-header>
 
 <ion-content>
-  
+  <div *ngFor="let item of questions">
+    <div (click)="openQuestions(item.num)">
+      <h1>
+        ĐỀ SỐ {{item.num}}
+      </h1>
+    </div>
+  </div>
 </ion-content>

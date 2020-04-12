@@ -16,6 +16,5 @@ export class HomePage {
 
   openRouter(type: string) {
     this.router.navigate([(type === 'lythuyet') ? '/lythuyet' : '/baitap']);
-
   }
 }

@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 //import {url} from 'inspector';
 
+=======
+>>>>>>> 38e7d5cd10c80ef94373cf0f4f6c1c6a9ebe7146
 const getLyThuyet = () => {
     return [
         {

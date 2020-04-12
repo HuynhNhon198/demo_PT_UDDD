@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="dismiss()">
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title *ngIf="num">ĐỀ {{num}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ng-container *ngIf="baitap && i <= baitap.questions.length; else nopbai">
+  <ion-content>
+    <h1>{{cauhoi.question}}</h1>
+    <ion-list>
+      <ion-item *ngFor="let item of cauhoi.answers; let i = index" lines="none">
+        <ion-label>{{item.answer}}</ion-label>
+        <ion-checkbox slot="start" [(ngModel)]="item.isChecked" (ionChange)="selectCauTraLoi(item, i)"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  
+  <ion-footer class="ion-no-border">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h3 style="text-align: center;">
+            30
+          </h3>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="danger" size="large" (click)="next()">TIẾP TỤC</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+</ng-container>
+<ng-template #nopbai>
+  <ion-content *ngIf="ketqua">
+    <h1>{{ketqua}}</h1>
+  </ion-content>
+</ng-template>
+

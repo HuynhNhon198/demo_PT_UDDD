@@ -1,5 +1,38 @@
 ion-content {
+    //--background: #eeeeee;
     h1 {
-        text-align: center;
+        text-align: left;
     }
+    div {
+        text-align: center;
+        width: 100%;
+        margin: 40px 0px 60px;
+        pointer-events: none;
+    }
+    
+}
+ion-footer {
+    h3 {
+        color: aliceblue;
+    }
+}
+ion-content{
+    div class {
+     --background: #eeeeee;
+     h1 {
+         text-align: center;
+     }
+
+        text-align: center;
+        width: 100%;
+        margin: 40px 0px 60px;
+        pointer-events: none;
+     background: #b84c0d;
+        width: 100%;
+        height: 100%;
+        padding: 50px 10px 10px 10px;
+        border-radius: 6px;
+     }
+
+
 }

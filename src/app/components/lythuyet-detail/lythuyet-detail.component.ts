@@ -22,5 +22,5 @@ export class LythuyetDetailComponent implements OnInit {
   dismiss() {
     this.modalCtl.dismiss();
   }
-
+  
 }

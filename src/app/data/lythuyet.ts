@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-//import {url} from 'inspector';
 
-=======
->>>>>>> 38e7d5cd10c80ef94373cf0f4f6c1c6a9ebe7146
+//import {url} from 'inspector';
 const getLyThuyet = () => {
     return [
         {
@@ -110,7 +107,19 @@ const getLyThuyet = () => {
                 'assets/chuong 4/chuong4-13.JPG',
                 'assets/chuong 4/chuong4-14.JPG',
             ]
-        }
+        },
+        {
+            
+                img: 'assets/toan-1.jpg',
+                title: 'TỔNG HỢP',
+                desc: 'TỔNG HỢP KIẾN THỨC LỚP 1',
+                details: [
+                    'assets/tonghop/tonghop1.JPG',
+                    'assets/tonghop/tonghop2.JPG',
+                    
+                ]
+            
+        },
     ];
 };
 

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import getBaiTap from 'src/app/data/baitap';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-baitap-detail',
@@ -36,8 +37,7 @@ export class BaitapDetailComponent {
   dismiss() {
     this.modalController.dismiss();
   }
-
-  next() {
+    next() {
     // kiểm tra câu đúng
     if (this.i > 0) {
       const indexChecked = this.cauhoi.answers.findIndex(x => x.isChecked);

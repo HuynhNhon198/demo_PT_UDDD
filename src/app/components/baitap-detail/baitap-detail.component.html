@@ -9,9 +9,13 @@
 
 <ng-container *ngIf="baitap && i <= baitap.questions.length; else nopbai">
   <ion-content>
-    <h1>{{cauhoi.question}}</h1>
+    <h1 *ngIf="i">CÂU {{i}}: {{cauhoi.question}}</h1>
+    <div class="ion-no-border">
+     <img [src]="cauhoi.img">
+    </div>
     <ion-list>
       <ion-item *ngFor="let item of cauhoi.answers; let i = index" lines="none">
+        
         <ion-label>{{item.answer}}</ion-label>
         <ion-checkbox slot="start" [(ngModel)]="item.isChecked" (ionChange)="selectCauTraLoi(item, i)"></ion-checkbox>
       </ion-item>
@@ -37,7 +41,11 @@
 </ng-container>
 <ng-template #nopbai>
   <ion-content *ngIf="ketqua">
-    <h1>{{ketqua}}</h1>
+    <div class='nopbai'>
+    <h1>{{ketqua}} điểm</h1>
+    <img src="assets/cup1.jpg">   
+    <ion-button expand="block" color="success" size="large" (click)='dismiss()'>TRỞ VỀ</ion-button>
+  </div>
   </ion-content>
 </ng-template>
 

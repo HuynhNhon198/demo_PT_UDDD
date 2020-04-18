@@ -70,7 +70,7 @@ export class BaitapDetailComponent {
   // hàm chấm điểm
   submit() {
     const quantityQuestions = this.baitap.questions.length;
-    this.ketqua = (`${this.caudung} / ${quantityQuestions}`);
+    this.ketqua = (`${this.caudung}`);
   }
 
 }

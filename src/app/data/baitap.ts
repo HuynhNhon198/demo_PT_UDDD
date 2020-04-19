@@ -114,7 +114,7 @@ const getBaiTap = () => {
                         {
                             answer: '3',
                             correct: true
-                        
+
                         }
                     ]
                 },
@@ -125,7 +125,7 @@ const getBaiTap = () => {
                         {
                             answer: '4',
                             correct: true
-                        
+
                         },
                         {
                             answer: '2',
@@ -189,7 +189,7 @@ const getBaiTap = () => {
                         {
                             answer: '1',
                             correct: true
-                        
+
                         },
                         {
                             answer: '2'
@@ -284,7 +284,7 @@ const getBaiTap = () => {
                         {
                             answer: '1',
                             correct: true
-                        
+
                         },
                         {
                             answer: '2',
@@ -385,14 +385,14 @@ const getBaiTap = () => {
                         },
                         {
                             answer: '4',
-                            correct:true
+                            correct: true
                         },
                         {
                             answer: '5',
                         }
                     ]
                 },
-                
+
             ]
         },
         {
@@ -405,7 +405,7 @@ const getBaiTap = () => {
                         {
                             answer: '>'
                         },
-                        
+
                         {
                             answer: '<',
                             correct: true
@@ -419,7 +419,7 @@ const getBaiTap = () => {
                         {
                             answer: '>'
                         },
-                        
+
                         {
                             answer: '<',
                             correct: true
@@ -435,7 +435,7 @@ const getBaiTap = () => {
                         },
                         {
                             answer: '<',
-                            correct:true
+                            correct: true
                         },
                     ]
                 },
@@ -446,7 +446,7 @@ const getBaiTap = () => {
                         {
                             answer: '>'
                         },
-                        
+
                         {
                             answer: '<',
                             correct: true
@@ -460,7 +460,7 @@ const getBaiTap = () => {
                         {
                             answer: '>'
                         },
-                        
+
                         {
                             answer: '<',
                             correct: true
@@ -473,9 +473,9 @@ const getBaiTap = () => {
                     answers: [
                         {
                             answer: '>',
-                            correct:true
+                            correct: true
                         },
-                        
+
                         {
                             answer: '<',
                         },
@@ -489,7 +489,7 @@ const getBaiTap = () => {
                             answer: '>',
                             correct: true
                         },
-                        
+
                         {
                             answer: '<',
                         },
@@ -501,9 +501,9 @@ const getBaiTap = () => {
                     answers: [
                         {
                             answer: '>',
-                            correct:true
+                            correct: true
                         },
-                        
+
                         {
                             answer: '<',
                         },
@@ -516,7 +516,7 @@ const getBaiTap = () => {
                         {
                             answer: '>'
                         },
-                    
+
                         {
                             answer: '<',
                             correct: true
@@ -530,7 +530,7 @@ const getBaiTap = () => {
                         {
                             answer: '>'
                         },
-                        
+
                         {
                             answer: '<',
                             correct: true
@@ -1066,6 +1066,7 @@ const getBaiTap = () => {
                     ]
                 },
                 {
+                    // tslint:disable-next-line: max-line-length
                     question: 'Lớp 1B có 35 cái ghế đỏ, lớp 1B cho lớp 1C mượn 7 cái ghế. Hỏi lớp 1B còn lại bao nhiêu cái ghế đỏ ?',
                     img: '',
                     answers: [
@@ -1122,10 +1123,10 @@ const getBaiTap = () => {
                         }
                     ]
                 },
-            
+
             ]
         },
-        
+
     ];
 };
 

@@ -110,7 +110,7 @@ const getLyThuyet = () => {
         },
         {
             
-                img: 'assets/toan-1.jpg',
+                img: 'assets/tonghop/tonghop.jpg',
                 title: 'TỔNG HỢP',
                 desc: 'TỔNG HỢP KIẾN THỨC LỚP 1',
                 details: [

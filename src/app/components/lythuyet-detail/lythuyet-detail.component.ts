@@ -9,7 +9,7 @@ import { ModalController } from '@ionic/angular';
 export class LythuyetDetailComponent implements OnInit {
   @Input() chuong: any;
   slideOpts = {
-    speed: 1000,
+    speed: 100,
   };
   constructor(
     private modalCtl: ModalController

@@ -1066,7 +1066,6 @@ const getBaiTap = () => {
                     ]
                 },
                 {
-                    // tslint:disable-next-line: max-line-length
                     question: 'Lớp 1B có 35 cái ghế đỏ, lớp 1B cho lớp 1C mượn 7 cái ghế. Hỏi lớp 1B còn lại bao nhiêu cái ghế đỏ ?',
                     img: '',
                     answers: [
@@ -1124,9 +1123,399 @@ const getBaiTap = () => {
                     ]
                 },
 
-            ]
+            ],
+            
         },
-
+        {
+        num: 7,
+        questions: [
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh1.JPG',
+                answers: [
+                    {
+                        answer: '11',
+                        correct: true
+                    },
+                    {
+                        answer: '10 ',
+                    },
+                    {
+                        answer: '12',
+                    },
+                    {
+                        answer: '9'
+                    }
+                ]
+            },
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh2.JPG',
+                answers: [
+                    {
+                        answer: '9'
+                    },
+                    {
+                        answer: '10',
+                    },
+                    {
+                        answer: '11',
+                    },
+                    {
+                        answer: '12',
+                        correct: true
+                    }
+                ]
+            },
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh3.JPG',
+                answers: [
+                    {
+                        answer: '14'
+                    },
+                    {
+                        answer: '10',
+                    },
+                    {
+                        answer: '15',
+                        correct: true
+                    },
+                    {
+                        answer: '16'
+                    }
+                ]
+            },
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh4.JPG',
+                answers: [
+                    {
+                        answer: '9'
+                    },
+                    {
+                        answer: '13',
+                        correct: true
+                    },
+                    {
+                        answer: '11',
+                    },
+                    {
+                        answer: '12'
+                    }
+                ]
+            },
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh5.JPG',
+                answers: [
+                    {
+                        answer: '13'
+                    },
+                    {
+                        answer: '14',
+                    },
+                    {
+                        answer: '11',
+                    },
+                    {
+                        answer: '12',
+                        correct: true
+                    }
+                ]
+            },
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh6.JPG',
+                answers: [
+                    {
+                        answer: '15',
+                        correct: true
+                    },
+                    {
+                        answer: '16',
+                    },
+                    {
+                        answer: '14',
+                    },
+                    {
+                        answer: '17'
+                    }
+                ]
+            },
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh7.JPG',
+                answers: [
+                    {
+                        answer: '20'
+                    },
+                    {
+                        answer: '17',
+                    },
+                    {
+                        answer: '18',
+                        correct: true
+                    },
+                    {
+                        answer: '19'
+                    }
+                ]
+            },
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh8.JPG',
+                answers: [
+                    {
+                        answer: '19'
+                    },
+                    {
+                        answer: '17',
+                        correct: true
+                    },
+                    {
+                        answer: '18',
+                    },
+                    {
+                        answer: '20'
+                    }
+                ]
+            },
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh9.JPG',
+                answers: [
+                    {
+                        answer: '19',
+                        correct: true
+                    },
+                    {
+                        answer: '18',
+                    },
+                    {
+                        answer: '20',
+                    },
+                    {
+                        answer: '21'
+                    }
+                ]
+            },
+            {
+                question: 'Số ?',
+                img: 'assets/de7/hinh10.JPG',
+                answers: [
+                    {
+                        answer: '19'
+                    },
+                    {
+                        answer: '18',
+                    },
+                    {
+                        answer: '17',
+                        correct: true
+                    },
+                    {
+                        answer: '16'
+                    }
+                ]
+            },
+        ]
+        },
+        {
+            num: 8,
+            questions: [
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh1.JPG',
+                    answers: [
+                        {
+                            answer: '10 cái kẹo',
+                            correct: true
+                        },
+                        {
+                            answer: '11 cái kẹo ',
+                        },
+                        {
+                            answer: '12 cái kẹo',
+                        },
+                        {
+                            answer: '9 cái kẹo'
+                        }
+                    ]
+                },
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh2.JPG',
+                    answers: [
+                        {
+                            answer: '11 xe máy',
+                        },
+                        {
+                            answer: '10 xe máy ',
+                            correct: true
+                        },
+                        {
+                            answer: '12 xe máy ',
+                        },
+                        {
+                            answer: '9 xe máy'
+                        }
+                    ]
+                },
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh3.JPG',
+                    answers: [
+                        {
+                            answer: '6 con gà',
+                        },
+                        {
+                            answer: '7 con gà ',
+                        },
+                        {
+                            answer: '8 con gà',
+                        },
+                        {
+                            answer: '9 con gà',
+                            correct: true
+                        }
+                    ]
+                },
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh4.JPG',
+                    answers: [
+                        {
+                            answer: '8 quả bóng',
+                        },
+                        {
+                            answer: '10 quả bóng',
+                        },
+                        {
+                            answer: '7 quả bóng',
+                            correct: true
+                        },
+                        {
+                            answer: '9 quả bóng'
+                        }
+                    ]
+                },
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh5.JPG',
+                    answers: [
+                        {
+                            answer: '8 bạn ',
+                        },
+                        {
+                            answer: '7 bạn',
+                        },
+                        {
+                            answer: '12 bạn ',
+                        },
+                        {
+                            answer: '9 bạn ',
+                            correct: true
+                        }
+                    ]
+                },
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh6.JPG',
+                    answers: [
+                        {
+                            answer: '15 cây chuối ',
+                            correct: true
+                        },
+                        {
+                            answer: '14 cây chuối ',
+                        },
+                        {
+                            answer: '12 cây chuối ',
+                        },
+                        {
+                            answer: '16 cây chuối'
+                        }
+                    ]
+                },
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh7.JPG',
+                    answers: [
+                        {
+                            answer: '45 gói bánh ',
+                        },
+                        {
+                            answer: '50 gói bánh ',
+                            correct: true
+                        },
+                        {
+                            answer: '51 gói bánh ',
+                        },
+                        {
+                            answer: '48 gói bánh'
+                        }
+                    ]
+                },
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh8.JPG',
+                    answers: [
+                        {
+                            answer: '6 con gà',
+                            correct: true
+                        },
+                        {
+                            answer: '7 con gà ',
+                        },
+                        {
+                            answer: '4 con gà',
+                        },
+                        {
+                            answer: '5 con gà'
+                        }
+                    ]
+                },
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh9.JPG',
+                    answers: [
+                        {
+                            answer: '6 quả bóng',
+                        },
+                        {
+                            answer: '3 quả bóng ',
+                        },
+                        {
+                            answer: '5 quả bóng',
+                            correct: true
+                        },
+                        {
+                            answer: '4 quả bóng'
+                        }
+                    ]
+                },
+                {
+                    question: 'Tìm câu trả lời đúng ?',
+                    img: 'assets/de8/hinh10.JPG',
+                    answers: [
+                        {
+                            answer: '5 con vịt',
+                        },
+                        {
+                            answer: '4 con vịt ',
+                        },
+                        {
+                            answer: '1 con vịt',
+                        },
+                        {
+                            answer: '3 con vịt',
+                            correct: true
+                        }
+                    ]
+                },
+            ]
+        }
     ];
 };
 

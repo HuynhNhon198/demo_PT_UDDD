@@ -1,5 +1,5 @@
 ion-content {
-    --background: #eee;
+    --background: rgb(255, 255, 255);
     ion-slides {
         height: 100%;
       }
@@ -13,8 +13,10 @@ ion-content {
       }
       
       .swiper-slide img {
+        --background: fullscreen;
         width: 100%;
-        margin: 40px 0px 60px;
+        height: 100%;
+        margin: 0px 0px 0px;
         pointer-events: none;
       }
       

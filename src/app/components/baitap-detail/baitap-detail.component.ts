@@ -25,7 +25,7 @@ export class BaitapDetailComponent {
   i = 0;
   ketqua: string;
   chualam = true;
-  time = 5;
+  time = 180;
   constructor(
     private modalController: ModalController,
     private storage: Storage
@@ -54,6 +54,7 @@ export class BaitapDetailComponent {
     // kiểm tra câu đúng
     if (this.i > 0) {
       this.checkmark();
+      this.chualam = true;
     }
 
     // chuyển câu hỏi

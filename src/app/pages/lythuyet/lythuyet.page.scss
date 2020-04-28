@@ -8,7 +8,14 @@ ion-content {
         border-radius: 6px;
         border: #3880ff solid 2px;
         ion-col {
-            background: #27a21c;
+            background: #e09d0d;
+            h1 {
+                text-align: center;
+                color: rgb(243, 11, 11);
+            }
+            p {
+                text-align: center;
+            }
         }
     }
 }

@@ -8,6 +8,7 @@ import { LythuyetPageRoutingModule } from './lythuyet-routing.module';
 
 import { LythuyetPage } from './lythuyet.page';
 import { LythuyetDetailComponent } from 'src/app/components/lythuyet-detail/lythuyet-detail.component';
+import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { LythuyetDetailComponent } from 'src/app/components/lythuyet-detail/lyth
   entryComponents: [
     LythuyetDetailComponent
   ],
+  providers: [PhotoViewer],
   declarations: [LythuyetPage, LythuyetDetailComponent]
 })
 export class LythuyetPageModule {}

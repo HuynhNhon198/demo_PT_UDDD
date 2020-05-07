@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, LoadingController } from '@ionic/angular';
 import getBaiTap from 'src/app/data/baitap';
 import { $ } from 'protractor';
 import { Storage } from '@ionic/storage';
@@ -23,27 +23,36 @@ export class BaitapDetailComponent {
   };
   caudung = 0;
   i = 0;
-  ketqua: string;
+  ketqua: string | number;
   chualam = true;
   time = 180;
   constructor(
     private modalController: ModalController,
-    private storage: Storage
+    private storage: Storage,
+    private loadingController: LoadingController
   ) {
   }
 
-  ionViewDidEnter() {
-    const data = getBaiTap();
-    this.baitap = data.find(x => x.num === this.num);
-    this.i = 0;
-    this.next();
-    const timer = setInterval(() => {
-      this.time--;
-      if (this.time === 0) {
-        clearInterval(timer);
-        this.checkmark();
-        this.submit();
-      }
+  async ionViewDidEnter() {
+
+    const loading = await this.loadingController.create({
+      message: 'Đang nạp dữ liệu...',
+      duration: 2000
+    });
+    await loading.present();
+    setTimeout(() => {
+      const data = getBaiTap();
+      this.baitap = data.find(x => x.num === this.num);
+      this.i = 0;
+      this.next();
+      const timer = setInterval(() => {
+        this.time--;
+        if (this.time === 0) {
+          clearInterval(timer);
+          this.checkmark();
+          this.submit();
+        }
+      }, 1000);
     }, 1000);
   }
 
@@ -91,19 +100,19 @@ export class BaitapDetailComponent {
   submit() {
     const quantityQuestions = this.baitap.questions.length;
 
-    this.ketqua = `${this.caudung}`;
+    this.ketqua = +this.caudung;
 
     const ind = this.lichsulambai.findIndex(x => x.num === this.num);
     const obj = {
       num: this.num,
-      ketqua: this.ketqua
+      ketqua: this.ketqua.toString()
     };
     if (ind === -1) {
       this.lichsulambai.push(obj);
     } else if (ind > -1) {
       this.lichsulambai[ind] = obj;
     }
-    this.storage.set('lichsulambai', this.lichsulambai );
+    this.storage.set('lichsulambai', this.lichsulambai);
   }
 
 }

@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar>
     <ion-buttons slot="start" (click)="dismiss()">
       <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
     </ion-buttons>
@@ -39,10 +39,11 @@
     </ion-grid>
   </ion-footer>
 </ng-container>
-  <ion-content *ngIf="ketqua">
+<ng-container *ngIf="ketqua">
+  <ion-content >
     <h1 style= "text-align:center;">
       {{ketqua}} điểm</h1>
-      <p *ngIf="ketqua == 10; else poor" style="text-align: center;">
+      <p *ngIf="ketqua >= 9; else poor" style="text-align: center;">
         BẠN THẬT XUẤT SẮC 😍
       </p>
       <ng-template #poor>
@@ -50,7 +51,17 @@
           BẠN CẦN CỐ GẮNG HƠN NHÉ 😞
         </p>
       </ng-template>
-    <img src="assets/cup1.jpg"> 
-    <ion-button style="margin: 0px 8px;" expand="block" color="success" size="large" (click)='dismiss()'>TRỞ VỀ</ion-button>
-  </ion-content>
+    <img src="assets/cup1.jpg">
+    </ion-content> 
+    <ion-footer class="ion-no-border">
+      <ion-grid style="margin: 0px 8px;">
+        <ion-row>
+          <ion-col>
+            <ion-button expand="block" color="success" size="large" (click)="dismiss()" >TRỞ VỀ</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-footer>
+  </ng-container>
+  
 

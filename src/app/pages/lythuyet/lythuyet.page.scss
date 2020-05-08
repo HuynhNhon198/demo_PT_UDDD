@@ -1,9 +1,11 @@
-
+ion-header {
+    --background: #fcfcfc;
+}
 ion-content {
     --background: #fcfcfc;
 
     ion-row {
-        background: #ffffff;
+        background: #dd9206;
         margin: 10px;
         border-radius: 6px;
         border: #e8e8e859 solid 2px;
@@ -11,10 +13,11 @@ ion-content {
         margin-bottom: 20px;
         ion-col {
             h1 {
-                color: #3171e0;
+                color: #f31b08;
                 font-weight: 600;
             }
             p {
+                color: #fcfcfc;
                 margin-right: 10px;
             }
         }
